@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción de la página">
+    <title>Mi Página</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sección</h2>
+            <p>Contenido principal.</p>
+        </section>
+
+        <section>
+            <h2>Iniciar sesión</h2>
+            <form action="" method="post">
+                <div>
+                    <label for="usuario">Usuario</label>
+                    <input type="email" id="usuario" name="usuario" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div>
+                    <label for="clave">Clave</label>
+                    <input type="password" id="clave" name="clave" placeholder="Ingrese su clave" required minlength="6">
+                </div>
+
+                <div>
+                    <label for="sesion">Sesión</label>
+                    <input type="text" id="sesion" name="sesion" list="listaSesiones" placeholder="Seleccione una duración" required>
+                    <datalist id="listaSesiones">
+                        <option value="3 minutos"></option>
+                        <option value="5 minutos"></option>
+                        <option value="30 minutos"></option>
+                        <option value="1 hora"></option>
+                    </datalist>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Página</p>
+    </footer>
+</body>
+</html>
